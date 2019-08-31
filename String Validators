@@ -1,0 +1,47 @@
+import string
+s=input()
+b=0
+if s.isalnum():
+    print('True')
+else:
+    print('False')
+for i in s:
+    if i.isalpha():
+        b=1
+        break
+    else:
+        b=0
+if b==1:
+    print('True')
+else:
+    print('False')
+for i in s:
+    if i.isdigit():
+        b=1
+        break
+    else:
+        b=0
+if b==1:
+    print('True')
+else:
+    print('False')
+for i in s:
+    if i.islower():
+        b=1
+        break
+    else:
+        b=0
+if b==1:
+    print('True')
+else:
+    print('False')
+for i in s:
+    if i.isupper():
+        b=1
+        break
+    else:
+        b=0
+if b==1:
+    print('True')
+else:
+    print('False')
