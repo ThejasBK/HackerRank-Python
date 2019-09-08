@@ -1,0 +1,24 @@
+n=int(input())
+l=list()
+x=list()
+m=9999
+for i in range(0,n):
+    name=input()
+    score=float(input())
+    l.append([name,score])
+    if score<m:
+        m=score
+        sec=m
+for i,j in l:
+    if j==sec:
+        l.remove([i,j])
+m=9999
+for i,j in l:
+    if j<m:
+        m=j
+for i,j in l:
+    if m==j:
+        x.append(i)
+x=sorted(x)
+for i in x:
+    print(i)
