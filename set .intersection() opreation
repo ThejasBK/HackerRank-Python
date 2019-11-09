@@ -1,0 +1,30 @@
+The students of District College have subscriptions to English and French newspapers. Some students have subscribed only to English,
+some have subscribed only to French, and some have subscribed to both newspapers.
+
+You are given two sets of student roll numbers. One set has subscribed to the English newspaper,
+one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to both newspapers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a=int(input())
+x=set(map(int,input().split()))
+b=int(input())
+y=set(map(int,input().split()))
+c=x.intersection(y)
+co=0
+for i in c:
+    co+=1
+print(co)
