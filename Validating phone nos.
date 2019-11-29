@@ -1,0 +1,11 @@
+a=int(input())
+while a!=0:
+    n=input()
+    if n.isnumeric():
+        if int(n)>=6000000000 and int(n)<=9999999999:
+            print('YES')
+        else:
+            print('NO')
+    else:
+        print('NO')
+    a-=1
