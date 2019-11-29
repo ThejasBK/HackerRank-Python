@@ -1,0 +1,16 @@
+d=list(map(int,input().split()))
+n=d[0]
+a=d[1]
+eq=input()
+k=0
+j=''
+for i in eq:
+    if i=='x':
+        j+=str(n)
+    else:
+        j+=i
+ans=eval(j)
+if ans==a:
+    print("True")
+else:
+    print('False')
